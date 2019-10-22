@@ -1,1 +1,1 @@
-# mybudget
+# natalixbudget.github.io
