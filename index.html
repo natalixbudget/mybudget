@@ -11,18 +11,34 @@
 <body>
     <div id="bggraphic"></div>
     <style>
-   .rightpic {
-    float: right; /* Выравнивание по правому краю */
-    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
-   }
-  </style>
+     .rightpic {
+      float: right; /* Выравнивание по правому краю */
+      margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+     }
+    </style>
+    <style>
+      #blink1 {
+      -webkit-animation: blink1 3s linear infinite;
+      animation: blink1 3s linear infinite;
+     }
+     @-webkit-keyframes blink1 {
+     0% { color: rgba(34, 34, 34, 1); }
+     50% { color: rgba(34, 34, 34, 0); }
+     100% { color: rgba(34, 34, 34, 1); }
+    }
+     @keyframes blink1 {
+     0% { color: rgba(34, 34, 34, 1); }
+     50% { color: rgba(34, 34, 34, 0); }
+     100% { color: rgba(34, 34, 34, 1); }
+    }
+   </style>    
     <p><img src="взлет.png" 
-  width="189" height="255" alt="бюджет" class="rightpic"</p>
+       width="189" height="255" alt="бюджет" class="rightpic" </p>
     <div id="pin-h">
         <div id="avatar"></div>
         <div id="header-desc">
             <h1>Белютина Н.В.</h1>
-            <h2  id="blink1">ИДМ-19-02</h2>
+            <h2 id="blink1">ИДМ-19-02</h2>
             <ul class="top-menu">
                 <a href="#labrab1">
                     <li>Л/Р 1</li>
